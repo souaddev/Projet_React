@@ -1,0 +1,839 @@
+
+.sign-in{
+  width: 100%;
+  padding: 11px 15px 15px 25px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+#email-signup,#password-signup1,#password-signup2{
+
+  width: 98%;
+  height: 40px;
+  margin: 4px 5px ;
+  border: 1px solid #5e9dec;
+  border-radius: 10px;
+  outline: none;
+
+}
+#email-login,#password-login{
+  width: 90%;
+  height: 40px;
+  margin: 4px 5px ;
+  border: 1px solid #5e9dec;
+  border-radius: 10px;
+  outline: none;
+}
+
+#firstname-up,#lastname-up{
+  margin-left: 2px;
+  margin-bottom: 5px;
+  height: 40px;
+  width: 48%;
+  border: 1px solid #5e9dec;
+  border-radius: 10px;
+  outline: none;
+}
+
+
+#login{
+  float: left;
+  margin-left: 60px;
+  width: 35%;
+  height: 35px;
+  cursor: pointer;
+  border: 1px solid #5e9dec;
+  background-color:#5e9dec ;
+  color: white;
+  border-radius: 7px 0 0 7px;
+  transition: 0.3s;
+  outline: none;
+
+} 
+#login:hover{
+  background-color: #2779e2;
+}
+#sign-up{
+  margin-left: 130px;
+  width: 35%;
+  height: 35px;
+  border: 1px solid #0099cc;
+  background-color: #8cd2db;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  border-radius: 0 7px 7px 0;
+  transition: 0.3s;
+}
+
+#sign-up:hover{
+  background-color:#b1e4ea;
+  outline: none;
+}
+
+#creat_account{
+    background-color: #5e9dec;
+    border: 1px solid #2779e2;
+    border-radius: 0px 20px 0 20px;
+    color: white;
+    width: 43%;
+    height: 40px;
+    margin-left: 7px;
+    transition:   0.3s;
+    outline: none;
+    cursor: pointer;
+}
+#creat_account:hover{
+  background-color: #0b5abd;
+}
+
+/* The Modal (background) */
+.modl {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modl1 {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+/* Modal Content Box */
+.modl-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+    height:390px;
+     border-radius: 1rem;
+}
+
+.modl-content1 {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+    height:550px;
+    border-radius: 1rem;
+}
+
+.container{margin-top: 50px;}
+/* The Close Button (x) */
+
+.fas,.fa-times{
+    margin-top: 25px;
+    font-size: 23px;
+    margin-left: 350px;
+    color: grey;
+    transition: 0.1s;
+
+}
+.fas,.fa-times:hover,.fas,.fa-times:focus{
+    color: #d61b2c;
+
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.3s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+/*body { 
+      margin: 0;
+      text-align: center;
+      width:100%;
+}*/
+ 
+nav {
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    line-height: 25px;
+} 
+
+/**********Menu navbar*************/
+nav ul {
+      width: 100%;
+      line-height: 43px;
+      list-style: none;
+      /*background: #151519;*/
+      background: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      transition: .3s;
+      font-size: 18px;
+      font-family: 'Karla',cursive;
+}
+
+nav ul li,.dropbtn,.contct,#reserve-brdr {
+      display: inline-block;
+      padding: 16px 35px;
+      margin: 0;     
+}
+
+ 
+nav ul li a,.dropbtn,#reserve-brdr,.contct {
+      text-decoration: none;
+      font-size: 18px;
+      font-family: 'Karla',cursive;
+      color:#000000;
+      transition: .3s;
+      padding: -10px -10px -10px -10px;
+}
+
+
+/******Changement de background quand on pose la souris sur un item de navigation bar********/
+nav ul :hover
+ {
+       color: #5e9dec;
+       text-decoration: none;
+      
+ }
+nav ul:active{
+       color: #5e9dec;
+       text-decoration: none;
+      
+ }
+
+/*/ ***fixe la couleur background por l'item "Exursion" de navigation bar******/
+ul .fixee
+{
+      color: #d84d26;
+}
+
+/*****Change of the color when we scroll the page (background transparente) *******/
+nav.black ul {
+      /*background:rgba(1,1,1,0.5);*/
+      background: #151519;
+}
+
+
+.fa-times-circle{
+
+  font-size: 27px;
+  background-color:#cea56d ;
+  position: absolute;
+  border-radius: 15px;
+  color: black;
+  top: -2%;
+  right: -10px;
+
+}
+#reservee{
+  transition: 1s;
+  display: none;
+  width: 40%;
+  color: black;
+  padding: 20px;
+  height: 520px;
+  text-align: center;
+  background-color: white;
+  top: 15%;
+  right: 30%;
+  z-index: 99;
+  position: absolute;
+  opacity: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+
+.dropdown-content, .dropdown-content1{
+    display: none;
+    width: 0;
+    margin-right: 30px;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 0px;
+    z-index: 1;
+    overflow: auto;
+    text-align: center;
+}
+
+.dropdown-content a,.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,.dropdown-content1 a:hover {background-color: #ddd;} 
+
+.dropdown:hover .dropdown-content {display: block;min-width: 160px;}
+.dropdown:hover .dropdown-content1 {display: block;min-width: 140px;position: center;}
+
+#reserve-brdr{
+      text-decoration: none;
+      border: 1px solid  #5e9dec;
+      padding: 0px 20px 0px 20px;
+      color: #5e9dec;
+      border-radius: 10px;
+      transition: 0.3;
+}
+#reserve-brdr:hover{
+  text-decoration: none;
+  color: #fff;
+  background-color: #5e9dec;
+}
+.menu-icon {
+    text-decoration: none;
+    display: block;
+     background: #5e9dec;
+     width: 100%;
+     outline: none;
+}
+      
+/*Photos Header*/
+header {
+      width: 100%;
+      height: 100vh;
+      /*background: url(https://images5.alphacoders.com/772/772051.jpg) fixed;*/
+      /*background-color: : rgb(0,0,0,0.6);*/
+      background: url("https://d3i6fh83elv35t.cloudfront.net/static/2018/08/Books_HD_8314929977-1024x682.jpg") fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+
+}
+
+
+ #overh1{
+      margin: 3px 560PX 0px 560px;
+      vertical-align: bottom;
+      text-align: center;
+      font-size: 55px;
+      font-family: 'Karla',cursive;
+ }
+
+/*#overh2{
+      margin: 0;
+      letter-spacing: 1px;
+      color: #975d03;
+      
+      
+      text-transform:  uppercase;
+      font-family: "raleway-bold";
+    font-size: 50px;
+    font-weight: bold;
+
+ }*/
+.container-fluid .ovree h1{
+    margin: 0px 320px 0px 320px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: "raleway-bold";
+    font-size: 50px;
+    font-weight: bold;
+}
+
+ .shadow{
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    height: 142px;
+    bottom: -40px;
+    left: 0;
+    margin-bottom: -1px;
+    background: url("https://d3i6fh83elv35t.cloudfront.net/static/2018/08/Books_HD_8314929977-1024x682.jpg") ;
+}
+
+ .ovree{  
+      padding-top: 15%;
+      font-size: 60px;
+      color: white;
+      text-align: center;
+      opacity: 0;
+      animation: fadeInDown;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+ }
+
+ .animated{
+      animation: fadeInDown;
+      animation-duration: 1s;
+      animation-fill-mode: both;
+ }
+
+ .fadeInDown {
+      -webkit-animation-name: fadeInDown;
+       animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.search{
+  margin-top: 20px;
+  background-color: rgba(000,000,000,0.2);
+  position: relative;
+  border: 1px solid #5e9dec;
+  border-left: none;border-right: none;
+  width: 70%;min-height: 10%;
+  margin-left: auto;margin-right: auto;
+  text-align: center;
+  padding: 2%;
+  outline: none;
+}
+#txt-recherche{
+    width: 580px;
+    height: 50px;
+    border: 1px solid #c4c4c4;border-right: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    outline: none;
+}
+.btn-recherche{
+    width: 110px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    height: 50px; border-left: none;
+    margin-left: -10px;
+    margin-top: 10px;
+    background-color: #fff;
+    outline: none;
+}
+.btn-recherche .fas ,.fa-search:hover{
+    color: #5e9dec;
+}
+
+ /*TEXT*/
+.content  {
+      width: 70%;
+      margin-left: 14%;
+      margin-right: 8%;
+      padding-top: 40px;
+      position: center;
+      color: black;
+      font-family: sans-serif;
+      font-size: 15px;
+      text-align: justify;
+}
+ 
+/*LOGO*/
+.logoo {
+      /*display: inline-block;*/
+      line-height: 30px;
+      position: fixed;
+      float: left;
+      margin-left: 70px;   
+}
+
+.loogo{
+      margin-top: 15px;
+      height: 55px;
+      width: 198px;
+}
+
+.jlogo{
+      position: fixed;
+      float: left;
+      color: white;
+      top: 25px;
+      left: 150px;
+}
+
+.jlogo1{
+      position: fixed;
+      float: left;
+      font-size: 30px;
+      top: 50px;
+      color: #da9e00;
+      left: 200px;
+}
+
+ /********Navigation sur mobile (not yet complished)********/
+ .fa-bars{
+      color: #cea56d;
+      font-size: 1.3em;
+      outline: none;
+}
+
+.menu-icon {
+      line-height: 30px;
+      width: 100%;
+      background: brown;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+/*    Services    */
+.wrapper{
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+    /*margin: 60px;*/
+    text-align: center;
+}
+
+.services ul{
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.separator{
+    display: block;
+    width: 1px;
+    height: 320px;
+    background: #000;
+}
+
+.services h2{
+    color: #616161;
+    font-family: "raleway-bold";
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15PX;
+}
+
+.services p{
+    color: #838181;
+    font-family: "raleway-regular";
+    font-size: 14px;
+    line-height: 22px; 
+    margin-top: 10px;
+    letter-spacing: .3px;
+}
+
+
+.welcome-mor{
+      width: 100%;
+      height: 320px;
+      background: url("https://d3i6fh83elv35t.cloudfront.net/static/2018/08/Books_HD_8314929977-1024x682.jpg") ;
+      background-repeat: no-repeat;
+      background-position: center;
+      text-align: center;
+}
+
+.welcome{
+      color: white;
+      font-family: "Monsetrat";
+      font-size: 75px;
+      padding-top: 80px;
+
+}
+ .pic-right{
+     width: 40%;
+     margin-left: 60%;
+ }
+
+ .pic-left{
+     width: 40%;
+}
+
+.reservations{
+      width: 100%;
+      height: 250px;
+      background: url(http://paperlief.com/images/morocco-wallpaper-3.jpg) fixed;
+      background-color: black;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      vertical-align: middle;
+      text-align: center;
+}
+
+.reserve-title{
+      color: white;
+      font-family: "Monsetrat";
+      font-size: 75px;
+      vertical-align: middle;
+      text-align: center;
+      padding-top: 75px;
+}
+
+.contact-us {
+     width: 100%;
+     color: black;
+     padding: 10px 120px 120px;
+     height: 640px;
+     text-align: center;
+     background-color: #f2f2f2;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.form-fname{
+       float: left;
+       width: 49%;
+       padding-left: 15px;
+       text-align: center;
+}
+
+.form-lname{
+       float: right;
+       width: 49%;
+       padding-right: 20px;
+       text-align: center;
+}
+
+.fname,.lname{
+       width:100%;
+       border: 1px solid #cccccc;
+}
+
+.emailcc,.messagec{
+       width: 97%;
+       margin: 6px;
+       border: 1px solid #cccccc;
+}
+
+.fname,.lname,.emailcc{
+      height: 45px;
+}
+
+input:focus,textarea:focus{
+      outline: 0;
+     
+}
+
+textarea{
+      resize: none;
+}
+
+.error{
+      color: #e7153c;
+      font-size: 16px;
+      font-style: oblique;
+}
+
+.send-btn{
+        background: #3c97ce;
+        border: none;
+        color: white;
+        width: 1100px;
+        height: 43px;
+        margin: 6px;
+        border: 1px solid #009fff;
+        transition: .3s;
+        font-size: 18px;
+        border-radius: 20px;
+}
+
+.send-btn:hover{
+        background: #009fff;
+        color: white;
+        font-size: 19px;
+        cursor: pointer;
+}
+
+footer{
+        color: white;
+        height: 340px;
+        box-sizing: content-box;
+        background-color: #151519;
+        /*background-color: #535353;*/
+}
+
+.about-us {
+        padding-left: 0px;
+        padding-top:10px;
+}
+
+.time{
+        padding-left: 0px;
+  
+}
+
+.time p {
+        padding-left: 15px;
+}
+
+.fa-map-marker-alt,.fa-at,.fa-phone{
+        font-size: 32px;
+        margin: 7px;
+        color:#cea56d; 
+        bottom: 3px;
+}
+
+ #mb {
+        text-align: center;
+        color: #cea56d;
+        margin-top: 40px;
+}
+.after-footer{
+        height: 60px;
+        background-color: #1d1d1d;
+        text-align: center;
+        color: #fff;
+}
+
+.social [class*="fa fa-"] {
+        background-color: #cea56d; 
+        border-radius: 30px;
+        color:  #151519;
+        display: inline-block;
+        height: 37px;
+        line-height: 30px;
+        padding: 8px;
+        width: 37px;
+        text-align: center;
+        position: relative;
+        bottom: -60px;
+        right: -10px;
+        text-align: center;
+        margin-right: 6px;
+        margin-bottom: 20px;      
+}
+
+.social [class*="fa fa-"]:hover{
+        height: 42px;
+        line-height: 30px;
+        margin: 20px 9px 6px 3px;
+        padding: 8px;
+        width: 42px;
+        color: black;
+}
+
+#myBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 40px;
+        z-index: 99;
+        font-size: 18px;
+        outline: none;
+        background-color: #4483ff;
+        color: #fff;
+        cursor: pointer;
+        padding: 11px 17px 11px 17px;
+        border-radius: 50%;
+        border: 1px solid #4483ff;
+}
+
+#myBtn:hover {
+        background-color: #5e9dec;
+        color: white;
+}
+
+@media(max-width: 993px) {
+ 
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+ 
+      nav ul {
+            overflow: hidden;
+            max-height: 0px;
+            position: relative;
+            background: #151519;
+            width: 40%;
+            text-align: center;
+      }
+ 
+      nav.black ul {
+            background: #151519;
+      }
+ 
+      .showing {
+            max-height:40em;
+      }
+ 
+      nav ul li {
+            box-sizing: border-box;
+            width: 60%;
+            color: black;
+            padding: 24px;
+            text-align: center;
+      }
+      .dropdown:hover .dropdown-content {display: none;}
+
+    
+      footer{
+            color: white;
+            height: 600px;
+            position: relative;
+            box-sizing: content-box;
+            background-color: #151519;
+      }
+}
+
+@media(max-width: 750px) {
+
+    .form-fname{
+          float: none;
+          width: 100%;
+          padding-left: 0;
+          margin-top:-15px;
+    }
+
+    .form-lname{
+        float: none;
+        width: 100%;
+        padding-right: 0;
+        margin-bottom:-15px;
+        
+    }
+
+    .fname,.lname{
+      width:100%;
+      border: 1px solid #cccccc;
+    }
+
+    .emailcc,.messagec{
+       width: 100%;
+       margin: 0;
+       margin-top:-25px;
+       border: 1px solid #cccccc;
+    }
+    .contactt {
+      height: 700px;
+    }
+
+    footer{
+        color: white;
+        height: 800px;
+        position: relative;
+        box-sizing: content-box;
+        background-color: #151519;
+    }
+}
